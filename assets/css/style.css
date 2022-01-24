@@ -1,0 +1,610 @@
+@charset "utf-8";
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Force scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+/* Align radios and text inputs with their label */
+
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+/* Hand cursor on clickable input elements */
+label,
+input[type="button"],
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup {
+  top: -0.7em;
+}
+sub {
+  bottom: -0.25em;
+}
+
+/* 1.2. Clear Fix
+   ========================== */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}
+
+/*for all*/
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+/* for font styling   */
+.font-faint {
+  color: #767676;
+}
+.font-black {
+  color: #000000;
+}
+.font-big {
+  font-size: 25px;
+}
+/* for section title  */
+
+.section-title{
+  font-size: 54px;
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+}
+.section-title::after{
+  content: "\f068 \f068 \f068 \f068 \f068";
+  font-family: "fontAwesome";
+  font-size: 35px;
+}
+
+/*for wrapper*/
+.wrapper {
+  max-width: 1360px;
+  width: 90%;
+  margin: 0 auto;
+}
+/*=================================
+  Header styling starts here
+=================================*/
+
+header {
+  width: 50%;
+  z-index: 1;
+  top: 0;
+  left: 45%;
+  position: absolute;
+}
+.menus {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+.menus ul {
+  flex-basis: 20%;
+  display: flex;
+  padding: 30px 0;
+  
+}
+.menus ul li {
+  flex-basis: 20%;
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+.menus ul li:hover {
+  border: 1px solid #000000;
+}
+
+/*=================================
+  Header styling ends here
+=================================*/
+
+/*=================================
+  main styling starts here
+=================================*/
+/* banner styling starts here  */
+
+.banner {
+    width: 100%;
+    position: relative;
+    top: 60;
+}
+.banner h1 {
+  font-size: 46px;
+  width: 34%;
+  position: absolute;
+  top: 45%;
+  left: 60%;
+}
+
+.scroll-icon {
+  position: absolute;
+  top: 90%;
+  left: 49%;
+  text-indent: -9999px;
+
+}
+.scroll-icon::before {
+  content: "\f103";
+  font-family: "fontAwesome";
+  float: right;
+  text-indent: 0;
+  font-size: 25px;
+  padding: 14px 16px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 100%;
+}
+
+/* banner styling ends here  */
+/* Turnip Greep section styling starts here  */
+.turnip-green {
+  width: 100%;
+  padding: 150px 0;
+  background-color: #e6aa15;
+}
+.turnip-green .wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.turnip-green-info {
+  flex-basis: 25%;
+  text-align: center;
+  padding-top: 40px;
+}
+.turnip-green-info::before {
+  content: "\f0f5";
+  font-family: "fontAwesome";
+  font-size: 70px;
+}
+.turnip-green-info h3,.turnip-green-info p {
+  font-size: 21px;
+  margin-top: 36px;
+}
+.turnip-green-info p {
+  font-size: 17px;
+}
+/* Turnip green section styling ends here  */
+/* This months specials section styling starts here  */
+.this-month-specials {
+  width: 100%;
+  padding: 92px 0;
+  text-align: center;
+}
+.special-items-pics {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.special-items-pics figure {
+  display: block;
+}
+.greens-fava {
+  position: relative;
+  text-align: center;
+}
+.greens-fava h3 {
+  position: absolute;
+  top: 0;
+}
+.greens-fava p {
+  top:10%;
+  position: absolute;
+} 
+
+/* this months specials section styling ends here  */
+/* about us section starts here  */
+.about-us {
+  width: 100%;
+  background-color: #dddddd;
+  margin-top: 124px;
+  position: relative;
+}
+.about-us .section-title {
+  position: absolute;
+  top: 100px;
+  left: 17%;
+}
+.about-us p {
+  width: 40%;
+  position: absolute;
+  top: 34%;
+  font-size: 34px;
+}
+.about-us img {
+  z-index: 0;
+}
+
+/* about us section ends here  */
+/* menu section styling starts here  */
+.menu {
+width: 100%;
+text-align: center;
+padding: 100px 0;
+}
+.menu-section-menu {
+  margin-top: 75px;
+}
+.menu-section-menu ul {
+  display: flex;
+  justify-content: center;
+}
+.menu-section-menu ul li {
+  flex-basis: 9%;
+  font-size: 18px;
+}
+.menu-section-menu ul li:hover{
+  font-size: 20px;
+  transition: all 1s ease-in-out;
+}
+.menu-list {
+  display: flex;
+}
+.menu-list-item {
+  display: inline-block;
+  margin-top: 60px;
+  color: #767676;
+  width: 90%;
+  font-size: 20px;
+  text-align: left;
+}
+/* menu section styling ends here  */
+/* contact styling starts here  */
+.contact {
+  text-align: center;
+  padding: 85px 0;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+}
+.contact-contents {
+  display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-content: space-between;
+ row-gap: 70px;
+ text-align: left;
+}
+.contact-veggie {
+  flex-basis: 45%;
+}
+.contact-veggie h3,.reservations h3,.contact-form h3 {
+  font-size: 22px;
+}
+.contact-veggie span,.reservations span {
+  font-size: 19px;
+}
+.reservations {
+  flex-basis: 45%;
+}
+.contact-contents span {
+  display: inline-block;
+  width: 50%;
+  margin-top: 20px;
+}
+.contact-form {
+  flex-basis: 100%;
+}
+.contact-form-contents li{
+  border-bottom: 1px solid #e1e8e3;
+}
+.contact-form label{
+  display: none;
+}
+.contact-form-contents {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  row-gap: 30px;
+  padding: 30px 0;
+}
+.contact-form-contents input[type="text"]{
+  height: 20px;
+}
+.contact-form-contents input[type="text"]::placeholder{
+  font-size: 18px;
+}
+.contact-form-name,.contact-form-email {
+  flex-basis: 50%;
+}
+.contact-form-message,.contact-form-submit {
+  flex-basis: 100%;
+}
+.contact-form input,.contact-form textarea {
+background-color: transparent;
+border: none;
+}
+.contact-form textarea,.contact-form-submit input{
+  font-size: 18px;
+  color: #767676;
+}
+.contact-form-contents{
+  font-size: 20px;
+}
+.contact-form-submit{
+  text-align: center;
+  box-sizing: border-box;
+  padding-bottom: 28px;
+}
+.contact-form-submit input{
+  border: 1px solid #767676;
+  padding: 20px 30px;
+}
+
+/* contact styling ends here  */
+/*=================================
+  main styling ends here
+=================================*/
+
+/*=================================
+  footer styling starts here
+=================================*/
+footer {
+  width: 100%;
+  position: relative;
+}
+footer img {
+  z-index: 1;
+}
+.footerbar {
+  display: flex;
+  font-size: 25px;
+  width: 100%;
+  position: absolute;
+  top: 90%;
+}
+.copyright,.footer-icons {
+  display: inline-block;
+}
+.copyright {
+  margin-left: 10%;
+flex-basis: 72%;
+}
+.bootstrap-theme {
+  color: #008000;
+}
+.bootstrap-theme::before {
+  content: "\f004  ";
+  font-family: "fontAwesome";
+  color: #ff0000;
+}
+.facebook-icon,.linkedin-icon{
+  text-indent: -9999px;
+}
+.facebook-icon::before,.linkedin-icon::before {
+  content: "\f09a";
+  font-family: "fontAwesome";
+  float: right;
+  text-indent: 0;
+  color: #767676;
+  border: 1px solid #767676;
+  padding: 10px;
+}
+.linkedin-icon::before {
+  content: "\f0e1";
+}
+
+/*=================================
+  footer styling ends here
+=================================*/
+
+/*media query starts*/
+/*media query for 995px starts here*/
+@media only screen and (max-width: 995px) {
+  .wrapper{
+    width: 80%;
+  }
+  .turnip-green .wrapper,.menu-list,.menu-section-menu ul,.special-items-pics {
+    flex-direction: column;
+  }
+  .special-items-pics div{
+    width: 90%;
+  }
+   .menu-section-menu ul li {
+    padding: 10px;
+  } 
+  .contact,.footerbar {
+    position: relative;
+    left: 0;
+    
+  }
+  .footerbar {
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    row-gap: 20px;
+  }
+  .banner h1 {
+    font-size: 20px;
+    font-weight: bold;
+    left: 5%;
+  }
+  .about-us .section-title {
+    top: 0;
+    left: 27%;
+  }
+  .about-us p {
+    font-size: 16px;
+    top: 40%;
+  }
+  textarea {
+    width: 100%;
+  }
+  .contact-contents div {
+    text-align: center;
+  }
+  .scroll-icon  {
+    top: 70%;
+  }
+  .copyright {
+    width: 100%;
+    font-size: 14px;
+    margin: 0 auto;
+  }
+  .menus ul{
+    flex-direction: column;
+  }
+}
