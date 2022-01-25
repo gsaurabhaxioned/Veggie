@@ -357,20 +357,38 @@ header {
 }
 .special-items-pics figure {
   display: block;
+  z-index: 1;
 }
-.greens-fava {
-  position: relative;
-  text-align: center;
-}
-.greens-fava h3 {
+.hover-content {
   position: absolute;
+  padding-top: 50px;
+  width: 228px;
+  height: 228px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 20px;
+  background-color: #FFFFFF;
+  display: none;
+  opacity: 0.5;
   top: 0;
+  left: 0;
 }
-.greens-fava p {
-  top:10%;
-  position: absolute;
-} 
-
+.hover-effect {
+  position: relative;
+}
+.hover-content h3::after {
+  content: '';
+  height: 2px;
+  width: 80%;
+  display: block;
+  margin: 20px auto 0 auto;
+  background-color: #000000;
+}
+.hover-effect:hover > .hover-content{
+  display: block;
+}
 /* this months specials section styling ends here  */
 /* about us section starts here  */
 .about-us {
