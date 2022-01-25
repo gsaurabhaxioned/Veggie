@@ -197,7 +197,9 @@ li {
 .font-faint {
   color: #767676;
 }
-
+.font-italic {
+  font-style: italic;
+}
 .font-big {
   font-size: 25px;
 }
@@ -600,23 +602,22 @@ flex-basis: 72%;
 =================================*/
 
 /*media query starts*/
+/* media query for 1024px starts here  */
+@media only screen and (max-width: 1024){
+  
+}
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
-  .wrapper{
+  .wrapper {
     width: 80%;
   }
-  .menus{
-    display: none;
-  }
-  .hamburger{
+
+  .hamburger {
     display: block;
   }
-  .turnip-green .wrapper,.menu-list,.menu-section-menu ul,.special-items-pics,.contact-contents {
+  .turnip-green .wrapper,.menu-list,.menu-section-menu,.special-items-pics,.contact-contents {
     flex-direction: column;
     align-items: center;
-  }
-  .special-items-pics div {
-    width: 90%;
   }
    .menu-section-menu li {
     padding: 10px;
@@ -633,16 +634,17 @@ flex-basis: 72%;
     row-gap: 20px;
   }
   .banner h1 {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     left: 5%;
+    top: 0;
   }
   .about-us .section-title {
     top: 0;
     left: 27%;
   }
   .about-us p {
-    font-size: 16px;
+    font-size: 18px;
     top: 40%;
   }
   textarea {
@@ -668,7 +670,13 @@ flex-basis: 72%;
     font-size: 14px;
     margin: 0 auto;
   }
-  .menus ul{
+  .menus {
+    display: none;
+  }
+  .menus ul {
     flex-direction: column;
+  }
+  .menus ul li a {
+    color: #000000;
   }
 }
