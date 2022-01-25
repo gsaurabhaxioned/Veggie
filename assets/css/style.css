@@ -243,9 +243,9 @@ header {
   display: none;
 }
 .ham{
-  text-indent: -9999px;
+  text-indent: -99999px;
   display: block;
-  width: auto;
+  width: 20px;
   float: right;
 }
 .ham::before,.cross::before {
@@ -254,6 +254,9 @@ header {
   float: right;
   text-indent: 0;
   font-size: 20px;
+}
+.cross {
+  text-indent: -9999px;
 }
 .cross::before {
 content: "\f00d";
