@@ -242,18 +242,21 @@ header {
   padding: 10px 0;
   display: none;
 }
-.hamburger span{
+.ham{
   text-indent: -9999px;
   display: block;
   width: auto;
   float: right;
 }
-.hamburger span::before{
+.ham::before,.cross::before {
   content: "\f0c9";
   font-family: "fontAwesome";
   float: right;
   text-indent: 0;
   font-size: 20px;
+}
+.cross::before {
+content: "\f00d";
 }
 .menus {
   width: 100%;
