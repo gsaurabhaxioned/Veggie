@@ -234,6 +234,9 @@ header {
   left: 45%;
   position: absolute;
 }
+.hamburger span{
+  text-indent: -9999px;
+}
 .menus {
   width: 100%;
   display: flex;
