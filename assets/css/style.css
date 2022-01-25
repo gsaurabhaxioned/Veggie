@@ -680,3 +680,15 @@ flex-basis: 72%;
     color: #000000;
   }
 }
+
+@media only screen and (max-width: 540px){
+.banner h1 {
+  font-size: 30px;
+}
+.ham {
+  font-size: 25px;
+}
+.hover-effect {
+  width: 100%;
+}
+}
