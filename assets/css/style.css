@@ -234,8 +234,21 @@ header {
   left: 45%;
   position: absolute;
 }
+.hamburger{
+  padding: 10px 0;
+  display: none;
+}
 .hamburger span{
   text-indent: -9999px;
+  display: block;
+  width: auto;
+  float: right;
+}
+.hamburger span::before{
+  content: "\f0c9";
+  font-family: "fontAwesome";
+  float: right;
+  text-indent: 0;
 }
 .menus {
   width: 100%;
@@ -559,6 +572,12 @@ flex-basis: 72%;
 @media only screen and (max-width: 995px) {
   .wrapper{
     width: 80%;
+  }
+  .menus{
+    display: none;
+  }
+  .hamburger{
+    display: block;
   }
   .turnip-green .wrapper,.menu-list,.menu-section-menu ul,.special-items-pics {
     flex-direction: column;
