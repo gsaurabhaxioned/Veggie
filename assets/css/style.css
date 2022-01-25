@@ -249,6 +249,7 @@ header {
   font-family: "fontAwesome";
   float: right;
   text-indent: 0;
+  font-size: 20px;
 }
 .menus {
   width: 100%;
@@ -579,8 +580,9 @@ flex-basis: 72%;
   .hamburger{
     display: block;
   }
-  .turnip-green .wrapper,.menu-list,.menu-section-menu ul,.special-items-pics {
+  .turnip-green .wrapper,.menu-list,.menu-section-menu ul,.special-items-pics,.contact-contents {
     flex-direction: column;
+    align-items: center;
   }
   .special-items-pics div{
     width: 90%;
@@ -615,7 +617,11 @@ flex-basis: 72%;
   textarea {
     width: 100%;
   }
-  .contact-contents div {
+  .contact{
+    margin: 0 auto;
+  }
+  .contact-contents div,.contact-contents span {
+    width: 100%;
     text-align: center;
   }
   .scroll-icon  {
