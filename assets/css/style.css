@@ -401,18 +401,17 @@ width: 100%;
 text-align: center;
 padding: 100px 0;
 }
-.menu-section-menu {
-  margin-top: 75px;
-}
-.menu-section-menu ul {
+
+.menu-section-menu{
   display: flex;
+  margin-top: 75px;
   justify-content: center;
 }
-.menu-section-menu ul li {
+.menu-section-menu li {
   flex-basis: 9%;
   font-size: 18px;
 }
-.menu-section-menu ul li:hover{
+.menu-section-menu li:hover{
   font-size: 20px;
   transition: all 1s ease-in-out;
 }
@@ -427,6 +426,7 @@ padding: 100px 0;
   font-size: 20px;
   text-align: left;
 }
+
 /* menu section styling ends here  */
 /* contact styling starts here  */
 .contact {
@@ -584,10 +584,10 @@ flex-basis: 72%;
     flex-direction: column;
     align-items: center;
   }
-  .special-items-pics div{
+  .special-items-pics div {
     width: 90%;
   }
-   .menu-section-menu ul li {
+   .menu-section-menu li {
     padding: 10px;
   } 
   .contact,.footerbar {
