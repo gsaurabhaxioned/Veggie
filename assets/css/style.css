@@ -203,18 +203,18 @@ li {
 .font-big {
   font-size: 25px;
 }
-.font-blur{
+.font-blur {
   opacity: 0.5;
 }
 /* for section title  */
 
-.section-title{
+.section-title {
   font-size: 54px;
   text-align: center;
   display: inline-block;
   font-weight: bold;
 }
-.section-title::after{
+.section-title::after {
   content: "\f068 \f068 \f068 \f068 \f068";
   font-family: "fontAwesome";
   display: block;
@@ -238,11 +238,11 @@ header {
   left: 45%;
   position: absolute;
 }
-.hamburger{
+.hamburger {
   padding: 10px 0;
   display: none;
 }
-.ham{
+.ham {
   text-indent: -9999px;
   display: block;
   width: auto;
@@ -348,7 +348,7 @@ content: "\f00d";
   font-size: 21px;
   margin-top: 30px;
 }
-.turnip-green-info h3{
+.turnip-green-info h3 {
   font-weight: bold;
   opacity: 0.6;
 }
@@ -398,7 +398,7 @@ content: "\f00d";
   margin: 20px auto 0 auto;
   background-color: #000000;
 }
-.hover-effect:hover > .hover-content{
+.hover-effect:hover > .hover-content {
   display: block;
 }
 /* this months specials section styling ends here  */
@@ -433,7 +433,7 @@ text-align: center;
 padding: 90px 0;
 }
 
-.menu-section-menu{
+.menu-section-menu {
   display: flex;
   margin-top: 75px;
   justify-content: center;
@@ -442,7 +442,7 @@ padding: 90px 0;
   flex-basis: 9%;
   font-size: 18px;
 }
-.menu-section-menu li:hover{
+.menu-section-menu li:hover {
   font-size: 20px;
   transition: all 1s ease-in-out;
 }
@@ -497,10 +497,10 @@ padding: 90px 0;
 .contact-form {
   flex-basis: 100%;
 }
-.contact-form-contents li{
+.contact-form-contents li {
   border-bottom: 1px solid #e1e8e3;
 }
-.contact-form label{
+.contact-form label {
   display: none;
 }
 .contact-form-contents {
@@ -510,10 +510,10 @@ padding: 90px 0;
   row-gap: 30px;
   padding: 30px 0;
 }
-.contact-form-contents input[type="text"]{
+.contact-form-contents input[type="text"] {
   height: 20px;
 }
-.contact-form-contents input[type="text"]::placeholder{
+.contact-form-contents input[type="text"]::placeholder {
   font-size: 18px;
 }
 .contact-form-name,.contact-form-email {
@@ -573,7 +573,7 @@ footer img {
   margin-left: 10%;
 flex-basis: 72%;
 }
-.footer-icons{
+.footer-icons {
   font-size: 24px;
 }
 .bootstrap-theme {
@@ -584,7 +584,7 @@ flex-basis: 72%;
   font-family: "fontAwesome";
   color: #ff0000;
 }
-.facebook-icon,.linkedin-icon{
+.facebook-icon,.linkedin-icon {
   text-indent: -9999px;
 }
 .facebook-icon::before,.linkedin-icon::before {
@@ -606,8 +606,11 @@ flex-basis: 72%;
 
 /*media query starts*/
 /* media query for 1024px starts here  */
-@media only screen and (max-width: 1024){
-  
+@media only screen and (max-width: 1440px){
+  .contact {
+    position: relative;
+    left: 0;
+    }
 }
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
@@ -618,30 +621,18 @@ flex-basis: 72%;
   .hamburger {
     display: block;
   }
-  .turnip-green .wrapper,.menu-list,.menu-section-menu,.special-items-pics,.contact-contents {
-    flex-direction: column;
-    align-items: center;
-  }
-   .menu-section-menu li {
-    padding: 10px;
-  } 
-  .contact,.footerbar {
-    position: relative;
-    left: 0;
-    
-  }
-  .footerbar {
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-between;
-    row-gap: 20px;
-  }
+  
   .banner h1 {
     font-size: 30px;
     font-weight: bold;
     left: 5%;
     top: 0;
   }
+  .turnip-green .wrapper,.menu-list,.menu-section-menu,.special-items-pics,.contact-contents {
+    flex-direction: column;
+    align-items: center;
+  }
+  
   .about-us .section-title {
     top: 0;
     left: 27%;
@@ -650,8 +641,21 @@ flex-basis: 72%;
     font-size: 18px;
     top: 40%;
   }
+   .menu-section-menu li {
+    padding: 10px;
+  } 
+  .contact,.footerbar {
+    position: relative;
+    left: 0;
+  }
   textarea {
     width: 100%;
+  }
+  .footerbar {
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    row-gap: 20px;
   }
   .hover-content {
     height: 100%;
@@ -670,7 +674,7 @@ flex-basis: 72%;
   }
   .copyright {
     width: 100%;
-    font-size: 14px;
+    font-size: 18px;
     margin: 0 auto;
   }
   .menus {
@@ -693,5 +697,9 @@ flex-basis: 72%;
 }
 .hover-effect {
   width: 100%;
+}
+.about-us p {
+  font-size: 16px;
+  top: 40%;
 }
 }
